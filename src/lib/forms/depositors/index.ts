@@ -1,0 +1,1 @@
+export { default as DepositorForm } from './depositor.svelte';

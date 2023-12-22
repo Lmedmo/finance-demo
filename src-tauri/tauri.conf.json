@@ -1,0 +1,120 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/schema.json",
+  "build": {
+    "beforeBuildCommand": "pnpm run build",
+    "beforeDevCommand": "pnpm run dev",
+    "devPath": "http://localhost:5173",
+    "distDir": "../build",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "Finance-Demo",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": true,
+      "window": {
+        "all": false,
+        "center": true,
+        "close": true,
+        "maximize": true,
+        "minimize": true,
+        "print": true,
+        "setAlwaysOnTop": true,
+        "setContentProtected": true,
+        "setFullscreen": true,
+        "setMinSize": true,
+        "setResizable": true,
+        "setSize": true,
+        "unmaximize": true,
+        "unminimize": true,
+
+        "requestUserAttention": false,
+        "setClosable": false,
+        "setCursorGrab": false,
+        "setCursorIcon": false,
+        "setCursorPosition": false,
+        "setCursorVisible": false,
+        "setDecorations": false,
+        "setFocus": false,
+        "setIcon": false,
+        "setIgnoreCursorEvents": false,
+        "setMaxSize": false,
+        "setMaximizable": false,
+        "setMinimizable": false,
+        "setPosition": false,
+        "setSkipTaskbar": false,
+        "setTitle": false,
+        "show": false,
+        "startDragging": false,
+        "create": false,
+        "hide": false
+      },
+      "path": {
+        "all": true
+      },
+      "fs": {
+        "all": true,
+        "scope": ["$RESOURCE/*"],
+        "readFile": true,
+        "writeFile": true,
+        "readDir": true,
+        "exists": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "category": "Finance",
+      "copyright": "",
+      "deb": {
+        "depends": []
+      },
+      "externalBin": [],
+      "icon": [
+        "../static/icons/32x32.png",
+        "../static/icons/128x128.png",
+        "../static/icons/128x128@2x.png",
+        "../static/icons/icon.icns",
+        "../static/icons/icon.ico"
+      ],
+      "identifier": "com.finance.dev",
+      "longDescription": "",
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null,
+        "minimumSystemVersion": "10.15"
+      },
+      "resources": [],
+      "shortDescription": "",
+      "targets": "all",
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
+    },
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": false
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "center": true,
+        "resizable": true,
+        "title": "Finance-Demo",
+
+        "decorations": false,
+        "transparent": true,
+        "alwaysOnTop": false
+      }
+    ],
+    "macOSPrivateApi": true
+  }
+}

@@ -1,0 +1,1 @@
+export { default as MerchantForm } from './merchant.svelte';

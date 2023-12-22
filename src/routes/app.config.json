@@ -1,0 +1,61 @@
+{
+  "AppTitle": "Finance",
+  "AppIcon": "/icons/icon.png",
+  "AppColor": "#00DB99",
+  "Pages": [  
+      {
+        "pageID": 1,
+        "Name": "Planning",
+        "Views": [
+          {
+            "viewID": 1,
+            "Name": "Budgets",
+            "Explorer": {
+                "included": true,
+                "references": "Budgets",
+                "defaultOption": { "id": 0, "name": "Current Budget", "type": 0, "icon": "", "icon_color": "" }
+            }
+          }
+        ]
+      },
+      {
+        "pageID": 2,
+        "Name": "Activity",
+        "Views": [
+          {
+            "viewID": 1,
+            "Name": "Balances",
+            "Explorer": {
+                "included": true,
+                "references": "Accounts",
+                "defaultOption": { "id": 0, "name": "All Accounts", "type": 0, "icon": "", "icon_color": "" }
+            }
+          }
+        ]
+      },
+      {
+        "pageID": 0,
+        "Name": "Settings",
+        "Views":[
+          {
+            "viewID": 1,
+            "Name": "Preferences",
+            "Explorer":{
+                "included": false,
+                "references": "",
+                "defaultOption":{ "id": 0, "name": "", "type": 0, "icon": "", "icon_color": "" }
+            }
+          },
+          {
+              "viewID": 2,
+              "Name": "Profile",
+              "Explorer":{
+                  "included": false,
+                  "references": "",
+                  "defaultOption":{ "id": 0, "name": "", "type": 0, "icon": "", "icon_color": "" }
+              }
+          }
+        ]
+      }
+  ]
+}
