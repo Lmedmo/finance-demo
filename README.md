@@ -1,7 +1,9 @@
 ![finance-demo](https://github.com/Lmedmo/finance-demo/assets/102483463/18c42d36-a49a-486b-b671-a94a6f24a1e9)
 
+![finance-teaser](https://github.com/Lmedmo/finance-demo/assets/102483463/214bc607-74ca-4a95-80f5-8514ace1db3c)
+
 # Overview
-This is a demo of a personal finance utility that I have been developing using SvelteKit, Tauri, and SQLite. The application will run on all platforms; macOS, Windows, Linux, iOS, Android, and the Web. The app comes with the full power of a relational database embedded directly into the application binary, unlocking nearly limitless possibilities regarding the variety of metrics that you can collect on your spending information, and because your data is stored locally, users will never have to worry about the security of their information being passed over a network. The cherry on top though it that with all the embedded features and custom UI assets, the app weighs in (currently) at just over 17 MB. Some of the key features and things you can do with Finance include:
+This is a demo of a personal finance utility that I have been developing using SvelteKit, Tauri, and SQLite. The application, from a single code base, will run natively on all platforms; macOS, Windows, Linux, iOS, Android, and the Web. The app comes with the full power of a relational database embedded directly into the binary, unlocking nearly limitless possibilities regarding the variety of metrics that you can collect on your spending information, and because your data is stored locally, users will never have to worry about the security of their information being passed over a network. The cherry on top though it that with all the embedded features and custom UI assets, the app weighs in (currently) at only a little over 17 MB; PDFs and Images are often larger than that. Some of the key features and things you can do with Finance include:
 - Custom window UI -- Consistent across all platforms.
 - Calculate budget category spending totals
 - Add Transactions quickly and see updated balances, trends, averages, and totals 
